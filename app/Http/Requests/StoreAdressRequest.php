@@ -26,7 +26,6 @@ class StoreAdressRequest extends FormRequest
         return [
             "lat" => "required",
             "lng" => "required",
-            "mobile_number" => "required|max:11",
         ];
     }
 }

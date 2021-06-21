@@ -12,7 +12,7 @@ class UserTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_get_profile_it_should_return_404_if_user_not_authenticated()
+    public function test_get_profile_it_should_return_401_if_user_not_authenticated()
     {
         $this->json('GET', 'api/get/profile')
             ->assertStatus(401)->assertJsonFragment(["message" => "Unauthenticated."]);
@@ -46,7 +46,7 @@ class UserTest extends TestCase
 
     }
 
-    public function test_update_profile_it_should_return_404_if_user_not_authenticated()
+    public function test_update_profile_it_should_return_401_if_user_not_authenticated()
     {
         $data = [];
         $this->json('POST', 'api/update/profile',$data)

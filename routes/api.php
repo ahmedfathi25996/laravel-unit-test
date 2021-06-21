@@ -27,4 +27,6 @@ Route::group(["middleware" => ["auth:sanctum"]],function(){
     Route::post("change/password",[App\Http\Controllers\Apis\UserController::class,"changePassword"]);
     Route::get("get/profile",[App\Http\Controllers\Apis\UserController::class,"getProfile"]);
     Route::post("update/profile",[App\Http\Controllers\Apis\UserController::class,"updateProfile"]);
+    Route::apiResource("addresses",\App\Http\Controllers\Apis\AddressController::class);
+
 });

@@ -28,13 +28,7 @@ class AddressFactory extends Factory
             'lat' => "123.1",
             'lng' => "145.96",
             "city" => "cairo",
-            "street_name" => "test",
-            "building" => "10",
-            "floor" => "10",
-            "aprt_no" => "10",
-            "mobile_number" => "01146899869",
-            "address_name" => "home",
-            "additional_directions" => "notes"
+            "street_name" => "test"
         ];
     }
 
